@@ -493,14 +493,14 @@
     
     .addtocart {
         position: absolute;
-        bottom: 32%;
+        /* bottom: 32%; */
         left: 50%;
-        transform: translate(-50%, -32%);
+        transform: translate(-50%, -30%);
     }
 
     .btn-addtocart {
         min-width: 250px;
-        max-width: 50%;
+        max-width: 90%;
         height: 45px;
         padding: 1rem;
         border-radius: var(--base-border-radius);
@@ -520,11 +520,16 @@
         position: absolute;
         flex-direction: column;
         display: flex;
-        bottom: 40%;
+        transform: translateY(-100%);
+        /* bottom: 40%; */
         right: 15px;
     }
 
     .product-icon-btn {
+        display: none;
+    }
+
+    .btn-compare {
         display: none;
     }
 
@@ -733,4 +738,10 @@
     .banner-title {
         margin-top: 1.2rem;
     }
+
+    .btn-add {
+        height: 4rem;
+        width: 4rem;
+    }
+    
 }
