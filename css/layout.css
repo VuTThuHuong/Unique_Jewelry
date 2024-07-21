@@ -23,7 +23,7 @@
 } 
 
 .flex-fill {
-    flex: 1 1 auto !important;
+    flex: 1 1 auto;
 }
 
 .none {
@@ -72,7 +72,7 @@
 }
 
 .justify-content-center {
-    justify-content: stretch;
+    justify-content: center;
 }
 
 .align-items-center {
@@ -80,7 +80,7 @@
 }
 
 .text-right {
-    text-align: center;
+    text-align: right;
 }
 
 .justify-content-right {
@@ -111,8 +111,7 @@
     justify-content: center;
     align-items: center;
 }
-
-.poiter {
+.pointer {
     cursor: pointer;
 }
 
@@ -124,8 +123,16 @@
     font-size: 18px;
 }
 
+.fs-20 {
+    font-size: 20px;
+} 
+
 .fs-40 {
     font-size: clamp(20px, 6vw, 40px);
+}
+
+.fw-600 {
+    font-weight: var(--bold-font-weight);
 }
 
 .fw-500 {
@@ -279,6 +286,11 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
+
+.gap-15{
+    width: 100%;
+    gap: 1.5rem;
+} 
 
 .gap-20{
     gap: 2rem;

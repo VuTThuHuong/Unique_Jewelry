@@ -23,7 +23,7 @@ html {
       --bs-gutter-x: 4rem;
   }
   .container,.container-fluid {
-    max-width: calc(var(--bls-container-fluid-width) + var(--bs-gutter-x));
+    max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
   }
 }
 
@@ -32,7 +32,7 @@ html {
     --bs-gutter-x: 4rem;
   }
   .container,.container-fluid {
-    max-width: calc(var(--bls-container-fluid-width) + var(--bs-gutter-x));
+    max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
   }
 }
 
@@ -41,7 +41,7 @@ html {
       --bs-gutter-x: 2rem;
   }
   .container,.container-fluid {
-    max-width: calc(var(--bls-container-fluid-width) + var(--bs-gutter-x));
+    max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
   }
 }
 
