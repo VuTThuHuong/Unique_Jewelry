@@ -300,6 +300,14 @@
         position: relative;
     }
 
+    .mobile-menu .submenu-container {
+        padding: 0 3rem;
+    }
+
+    .type_home .home-img {
+        display: none;
+    }
+
     .loadmore-menu .demo {
         display: block;
         padding: 1.5rem 0rem;
@@ -320,11 +328,11 @@
     } 
 
     .mobile-menu .ns-lists > * {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .submenu .submenu-container {
-        margin: 0 3rem;
+        padding: 0 3rem;
     }
 
     .type_collection {
@@ -392,6 +400,10 @@
         height: 100vh;
         z-index: 11111;
         overflow-y: auto;
+    }
+
+    .submenu .subchildmenu .menu-item:not(:last-child) {
+        border-bottom: 1px solid var(--border-2-fashion);
     }
     
     .mobile-menu-content > ul > li .submenu .subchildmenu > * + * {

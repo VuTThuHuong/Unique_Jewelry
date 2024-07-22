@@ -226,7 +226,7 @@ updateCountdown();
 
 
  /*========= Footer Bottom =========*/
-    const titleLinks = document.querySelectorAll('.title-links.action-list');
+    const titleLinks = document.querySelectorAll('.title-links');
 
     titleLinks.forEach(link => {
         link.addEventListener('click', function() {
