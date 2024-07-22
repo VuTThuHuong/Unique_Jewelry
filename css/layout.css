@@ -87,6 +87,10 @@
     justify-content: right;
 }
 
+.justify-content-stretch {
+    justify-content: stretch;
+}
+
 .align-items-right {
     align-items: right;
 }
@@ -100,7 +104,7 @@
 }
 
 .align-items-left {
-    align-items: left;
+    align-items: start;
 }
 
 .justify-content-between {
@@ -135,6 +139,10 @@
     font-weight: var(--bold-font-weight);
 }
 
+.fw-400 {
+    font-weight: var(--base-font-weight);
+}
+
 .fw-500 {
     font-weight: var(--medium-font-weight);
 }
@@ -161,10 +169,6 @@
 
 .overflow-y-auto {
     overflow: auto;
-}
-
-.fw-500 {
-    font-weight: 500;
 }
 
 .m-0 {
@@ -207,8 +211,16 @@
     margin-top: 2rem;
 }
 
+.ml-20 {
+    margin-left: 2rem;
+}
+
 .mr-10 {
     margin-right: 1rem;
+}
+
+.mr-20 {
+    margin-right: 2rem;
 }
 
 .mr-25 {

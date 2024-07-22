@@ -104,20 +104,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var swiper = new Swiper('.slide-socials', {
         slidesPerView: 6,
-        spaceBetween: 30,
+        spaceBetween: 5,
         breakpoints: {
             0: {
                 slidesPerView: 2,
-                spaceBetween : 15,
             },
             567: {
                 slidesPerView: 3,
-                spaceBetween : 20,
             
             },
             992: {
                 slidesPerView: 6,
-                spaceBetween : 30,
             },
         }
     });

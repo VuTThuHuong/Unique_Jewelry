@@ -20,7 +20,7 @@ html {
 
 @media (min-width: 1200px) {
   .container,.container-fluid, .strecth-width {
-      --bs-gutter-x: 4rem;
+      --bs-gutter-x: 6rem;
   }
   .container,.container-fluid {
     max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
@@ -76,6 +76,7 @@ textarea {
   margin: 0; 
   background: inherit;
   color: currentColor;
+  padding: 0;
 }
 
 button,
