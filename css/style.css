@@ -103,6 +103,7 @@ picture img {
 }
 
 img {
+	height: 100vh;
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
