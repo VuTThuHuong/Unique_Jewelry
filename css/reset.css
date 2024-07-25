@@ -18,30 +18,42 @@ html {
     width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container,.container-fluid, .strecth-width {
       --bs-gutter-x: 6rem;
   }
   .container,.container-fluid {
     max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
   }
+
+  .ns-lists {
+    --bs-gutter-x: 30px;
+}
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container,.container-fluid, .strecth-width {
-    --bs-gutter-x: 4rem;
+    --bs-gutter-x: 3rem;
   }
   .container,.container-fluid {
     max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
   }
+
+  .ns-lists {
+    --bs-gutter-x: 30px;
+}
 }
 
  @media (max-width: 768px){
   .container,.container-fluid, .strecth-width {
-      --bs-gutter-x: 2rem;
+      --bs-gutter-x: 3rem;
   }
   .container,.container-fluid {
     max-width: calc(var(--ns-container-fluid-width) + var(--bs-gutter-x));
+    
+  }
+  .ns-lists {
+    --bs-gutter-x: 15px;
   }
 }
 
@@ -70,13 +82,12 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; 
-  font-size: 100%; 
+  font-family: inherit;
+  font-size: 100%;
   line-height: 1.15;
-  margin: 0; 
+  margin: 0;
   background: inherit;
   color: currentColor;
-  padding: 0;
 }
 
 button,
@@ -86,6 +97,7 @@ input { /* 1 */
 
 button,
 select { 
+  cursor: pointer;
   text-transform: none;
 }
 
@@ -106,25 +118,29 @@ button,
   outline: none;
 }
 
-input[class="form-control"],select, textarea {
+input[class="form-control"], select, textarea {
   padding: var(--input-padding);
-  border: 1px solid var(--border-color-base);
-  background: var(--input-bg);
-  color: var(--input-color);
-  border-radius: var(--input-border-radius);
+  border: 1px solid var(--border-2-fashion);
+  background: var(--background);
+  color: var(--base-color);
+  border-radius: var(--base-border-radius);
   font-weight: var(--base-font-weight);
   font-size: 13px;
-  transition: var(--bls-transition);
+  transition: var(--transition);
+}
+
+textarea {
+  border-radius: 20px;
 }
 
 select,input[class="form-control"] {
   cursor: pointer;
   padding: 5px 30px 5px 20px;
-  height: 50px;
+  height: 40px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-image: url('../images/down.svg');
   background-repeat: no-repeat;
-  background-position: right 20px center; 
+  background-position: right 20px center;
 }

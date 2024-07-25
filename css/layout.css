@@ -137,6 +137,7 @@
 
 .fw-600 {
     font-weight: var(--bold-font-weight);
+    pointer-events: auto;
 }
 
 .fw-400 {
@@ -179,6 +180,14 @@
     margin-bottom: 0;
 }
 
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
 .mb-20 {
     margin-bottom: 2rem;
 }
@@ -199,6 +208,10 @@
     margin-top: 0;
 }
 
+.mt-10 {
+    margin-top: 1rem;
+}
+
 .mt-5 {
     margin-top: 0.5rem;
 }
@@ -209,6 +222,14 @@
 
 .mt-20 {
     margin-top: 2rem;
+}
+
+.mt-30 {
+    margin-top: 3rem;
+}
+
+.ml-10 {
+    margin-left: 1rem;
 }
 
 .ml-20 {
@@ -267,6 +288,10 @@
 
 .p-20 {
     padding: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
 }
 
 .px-10{

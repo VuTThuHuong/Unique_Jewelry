@@ -3430,7 +3430,7 @@ var Swiper = (function ()
 			const isNavButtonTarget = swiper.navigation && (e.target === swiper.navigation.nextEl || e.target === swiper.navigation.prevEl);
 			if (!isNavButtonTarget)
 			{
-				if (swiper.swipeDirection === 'next')
+				if (swiper.swipeDirection === '')
 				{
 					swiper.slideTo(rewindFirstIndex !== null ? rewindFirstIndex : stopIndex + increment);
 				}
