@@ -289,7 +289,7 @@ const updateProgress = (progressPercentage) => {
     iconShipping.style.left = `${progressPercentage}%`;
 
     if (progressPercentage > 0) {
-        progressBar.style.backgroundColor = '#0D53BB';}
+        progressBar.style.backgroundColor = '#9c7569';}
     else {
         progressBar.style.backgroundColor = '#ebebeb'; 
     }
