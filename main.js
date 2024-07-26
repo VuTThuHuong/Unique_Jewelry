@@ -317,14 +317,14 @@ const updateCart = () => {
 
         cartItems.forEach(item => {
             if (item.newPrice !== null && item.discountPrice !== null) {
-                priceContent = `
+                priceContent1 = `
                     <p class="pro-price my-10">
                         <span class="paragraph-font pro-price-new fw-500">$${item.newPrice.toFixed(2)}</span>
                         <span class="pro-price-del"><del>$${item.discountPrice.toFixed(2)}</del></span>
                     </p>
                 `;
             } else if (item.price !== null) {
-                priceContent = `<p class="pro-price pro-price-regular mb-0 paragraph-font fw-500">
+                priceContent1 = `<p class="pro-price pro-price-regular my-10 paragraph-font fw-500">
                                     $${item.price.toFixed(2)}
                                 </p>`;
             }
@@ -343,7 +343,7 @@ const updateCart = () => {
                                                         <h4 class="pro-name paragraph-font heading m-0">
                                                             <a aria-label="Name product" href="#">${item.name}</a>
                                                         </h4>
-                                                         ${priceContent}
+                                                         ${priceContent1}
                                                         <div class="minicart-actions">
                                                             <div class="quality">
                                                                 <button
@@ -450,11 +450,10 @@ addToCart.forEach(btn =>{
             newPrice = parseFloat(newPriceElement.textContent.replace('$', ''));
         }
 
-        // const existingItem = cartItems.find(item => item.name === productName);
-        const existingItem = cartItems.find(item => item.id === Date.now());
-        if(existingItem){
+        const existingItem = cartItems.find(item => item.name === productName);
+        if (existingItem) {
             existingItem.quantity++;
-        }
+        } 
         else {
             cartItems.push({
                 id: Date.now(),

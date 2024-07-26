@@ -172,9 +172,10 @@ input { /* 1 */
 }
 
 button,
-select { 
+select {
   cursor: pointer;
   text-transform: none;
+  padding: 0;
 }
 
 button,
@@ -183,6 +184,8 @@ button,
 [type="submit"] {
   appearance: button;
 }
+
+button.minicart-action.btn-icon {}
 
 [type="checkbox"],
 [type="radio"] {

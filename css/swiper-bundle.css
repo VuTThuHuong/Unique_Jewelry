@@ -28,3 +28,6 @@
           backface-visibility: hidden;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  pointer-events: auto;
+}
