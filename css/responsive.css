@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 575px) {
+    .slideshow .dots{
+        bottom: 10px;
+    }
+    
     .col-service-item {
         padding-right: 0;
     }
@@ -553,7 +557,7 @@
         position: absolute;
         flex-direction: column;
         display: flex;
-        transform: translateY(-100%);
+        transform: translateY(-108%);
         right: 15px;
     }
 
@@ -772,7 +776,7 @@
     }
 
     .col-desk-6 {
-        flex: 0 0 auto;
+        flex: 1 1 auto;
         max-width: 50%;
     }
 

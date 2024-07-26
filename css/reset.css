@@ -95,7 +95,7 @@ ol,li {
 }
 
 .btn-primary {
-  padding: var(--btn-padding);
+  padding: clamp(1rem, 1.2vw, 1.8rem) clamp(4rem, 4.5vw, 6.6rem);
   white-space: nowrap;
 }
 

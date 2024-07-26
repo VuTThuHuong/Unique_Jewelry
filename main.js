@@ -427,7 +427,7 @@ const updateCart = () => {
 addToCart.forEach(btn =>{
     btn.addEventListener('click', (e) => {
         const productElement = e.target.closest('.col-pro-items');
-        const productName = productElement.querySelector('.pro-name a').textContent;
+        const productName = productElement.querySelector('.pro-name.name-hover a').textContent;
         const productImg = productElement.querySelector('.pro-image img').src;
 
         let productPrice = null;
@@ -497,6 +497,21 @@ cancelButtons.forEach(button => {
     });
 });
 updateCart(); 
+
+/*====== Height Col-banner ======*/
+function setLocalVideoHeight() {
+    const colProductsContent = document.querySelector('.col-products-content');
+    const localVideo = document.querySelector('.local-video');
+
+    if (colProductsContent && localVideo) {
+        const colProductsContentHeight = colProductsContent.offsetHeight;
+        localVideo.style.height = `${colProductsContentHeight}px`;
+    }
+}
+
+
+setLocalVideoHeight();
+window.addEventListener('resize', setLocalVideoHeight);
 
 /*====== Countdown ======*/
 // Function to update the countdown
