@@ -74,7 +74,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="col-left justify-content-center">
+                <div class="col-left justify-content-center line-height-icon">
                     <a href="#" aria-label="Load HomePage">
                         <svg width="93" height="20">
                             <use xlink:href="sprite.svg#logo-load-page"></use>
@@ -87,7 +87,7 @@
                         <div class="mobile-menu-content">
                             <div class="desktop-none menu-mobile-title">
                                 <a aria-label="main menu" class="main-menu-list fw-600" href="#">Menu</a>
-                                <button aria-label="Close Menu" class="close-btn-main-menu pointer">
+                                <button aria-label="Close Menu" class="close-button close-btn-main-menu pointer">
                                     <svg class="icon-close-first" width="14" height="15">
                                         <use xlink:href="sprite.svg#exit"></use>
                                     </svg>
@@ -1182,43 +1182,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class=" pro-items">
-                                                    <div class="col-pro-items">
-                                                        <div class="pro-image rounder-5 relative overflow-hidden">
-                                                            <a aria-label="image product 1" href="#"
-                                                                class="aspect-ratio-container"
-                                                                style="--aspect-ratio: 1/1;">
-                                                                <img src="images/img_9.webp" loading="lazy" width="462"
-                                                                    height="462" alt="Product trending 1">
-                                                            </a>
-                                                            <a aria-label="product image 2" href="#"
-                                                                class="aspect-ratio-container pro-img-hover"
-                                                                style="--aspect-ratio: 1/1;">
-                                                                <img src="images/img_hover.webp" width="462"
-                                                                    height="462" alt="Product trending hover 1"
-                                                                    loading="lazy">
-                                                            </a>
-                                                        </div>
-                                                        <div class="pro-info mt-15">
-                                                            <span class="ns-categories cate-pro">Earrings</span>
-                                                            <h3 class="paragraph-font name-hover fw-400 heading my-10">
-                                                                <a aria-label="Name product" href="#">Ring in Platinum
-                                                                    with
-                                                                    Tanzanite</a>
-                                                            </h3>
-                                                            <div class="rating">
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                            </div>
-                                                            <p class="pro-price pro-price-regular mt-5 mb-0 fw-500 paragraph-font">
-                                                                $599.00
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1228,21 +1191,21 @@
                     </div>
                 </div>
                 <div class="col-right flex flex-row justify-content-right align-items-center gap-20 ml-20">
-                    <div class="header-account none d-block">
-                        <button aria-label="header account" class="action-login btn-icon">
+                    <div class="header-account none d-block line-height-icon">
+                        <button aria-label="header account" class="action-login btn-icon line-height-icon">
                             <svg width="17" height="17">
                                 <use xlink:href="sprite.svg#account-header"></use>
                             </svg>
                         </button>
                     </div>
-                    <div class="header-recently-viewed none d-block">
+                    <div class="header-recently-viewed none d-block line-height-icon">
                         <a href="#" class="recently-icon btn-icon" aria-label="Recent view product">
                             <svg width="18" height="18">
                                 <use xlink:href="sprite.svg#recently-pro-view"></use>
                             </svg>
                         </a>
                     </div>
-                    <div class="header-wishlist relative none d-block">
+                    <div class="header-wishlist relative none d-block line-height-icon">
                         <a href="#" aria-label="Wishlist" class="wishlist-icon-bubble btn-icon">
                             <svg width="20" height="17">
                                 <use xlink:href="sprite.svg#wishlist-header"></use>
@@ -1250,8 +1213,8 @@
                             <div class="wishlist-count h-count">0</div>
                         </a>
                     </div>
-                    <div class="header_minicart relative mr-10">
-                        <button aria-label="minicart cart" class="minicart-action btn-icon">
+                    <div class="header_minicart relative mr-10 line-height-icon">
+                        <button aria-label="minicart cart" class="minicart-action btn-icon line-height-icon">
                             <svg width="21" height="17">
                                 <use xlink:href="sprite.svg#cart-header"></use>
                             </svg>
@@ -1560,56 +1523,150 @@
     </header>
     <main>
         <!--SlideShow-->
-        <section class="slideshow hover-active-icon">
-            <div class="slideshow-container relative">
-                <div class="flex slideshow_image">
-                    <div class="col-image col-f">
-                        <div class="slide-image overflow-hidden">
-                            <a aria-label="image product" href="#"
-                                class="aspect-ratio-container block relative overflow-hidden"
-                                style="--aspect-ratio: 950/850;">
-                                <picture>
-                                    <source srcset="images/slideshow_1_576.webp" media="(max-width: 576px)" type="image/webp"
-                                        width="576" height="510">
-                                    <source srcset="images/slideshow_1_768.webp" media="(max-width: 768px)" type="image/webp"
-                                        width="768" height="680">
-                                    <source srcset="images/slideshow_1.webp" type="image/webp">
-                                    <img src="images/slideshow_1.webp" alt="Slide" width="950" height="850" loading="eager"
-                                        decoding="async">
-                                </picture>
-                            </a>
+        <section class="slideshow hover-active-icon relative">
+            <div class="slideshow-container">
+                <div class="slide-list">
+                    <div class="slide-item active">
+                        <div class="flex slideshow_image">
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_1_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_1_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_1.webp" type="image/webp">
+                                            <img src="images/slideshow_1.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_2_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_2_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_2.webp" type="image/webp">
+                                            <img src="images/slideshow_2.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-absolute slideshow_text absolute text-center">
+                            <h2 class="slide-title heading">The New <br> Engineered Jewelry</h2>
+                            <p class="slide-desc description paragraph-font">Discover the pieces of your dreams. Inspired by
+                                Greek Shields.
+                            </p>
+                            <a aria-label="Shop Now link" href="#" class="btn btn-primary">Shop Now</a>
                         </div>
                     </div>
-                    <div class="col-image col-f">
-                        <div class="slide-image overflow-hidden">
-                            <a aria-label="image product" href="#"
-                                class="aspect-ratio-container block relative overflow-hidden"
-                                style="--aspect-ratio: 950/850;">
-                                <picture>
-                                    <source srcset="images/slideshow_2_576.webp" media="(max-width: 576px)" type="image/webp"
-                                        width="576" height="510">
-                                    <source srcset="images/slideshow_2_768.webp" media="(max-width: 768px)" type="image/webp"
-                                        width="768" height="680">
-                                    <source srcset="images/slideshow_2.webp" type="image/webp">
-                                    <img src="images/slideshow_2.webp" alt="Slide" width="950" height="850" loading="eager"
-                                        decoding="async">
-                                </picture>
-                            </a>
+                    <div class="slide-item">
+                        <div class="flex slideshow_image">
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_2_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_2_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_2.webp" type="image/webp">
+                                            <img src="images/slideshow_1.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_2_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_2_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_2.webp" type="image/webp">
+                                            <img src="images/slideshow_1.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-absolute slideshow_text absolute text-center">
+                            <h2 class="slide-title heading">The New <br> Engineered Jewelry</h2>
+                            <p class="slide-desc description paragraph-font">Discover the pieces of your dreams. Inspired by
+                                Greek Shields.
+                            </p>
+                            <a aria-label="Shop Now link" href="#" class="btn btn-primary">Shop Now</a>
                         </div>
                     </div>
-                </div>
-                <div class="content-absolute slideshow_text absolute text-center">
-                    <h2 class="slide-title heading">The New <br> Engineered Jewelry</h2>
-                    <p class="slide-desc description paragraph-font">Discover the pieces of your dreams. Inspired by
-                        Greek Shields.
-                    </p>
-                    <a aria-label="Shop Now link" href="#" class="btn btn-primary">Shop Now</a>
+                    <div class="slide-item">
+                        <div class="flex slideshow_image">
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_1_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_1_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_1.webp" type="image/webp">
+                                            <img src="images/slideshow_1.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-image col-f">
+                                <div class="slide-image overflow-hidden">
+                                    <a aria-label="image product" href="#"
+                                        class="aspect-ratio-container block relative overflow-hidden"
+                                        style="--aspect-ratio: 950/850;">
+                                        <picture>
+                                            <source srcset="images/slideshow_1_576.webp" media="(max-width: 576px)" type="image/webp"
+                                                width="576" height="510">
+                                            <source srcset="images/slideshow_1_768.webp" media="(max-width: 768px)" type="image/webp"
+                                                width="768" height="680">
+                                            <source srcset="images/slideshow_1.webp" type="image/webp">
+                                            <img src="images/slideshow_2.webp" alt="Slide" width="950" height="850" loading="eager"
+                                                decoding="async">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-absolute slideshow_text absolute text-center">
+                            <h2 class="slide-title heading">The New <br> Engineered Jewelry</h2>
+                            <p class="slide-desc description paragraph-font">Discover the pieces of your dreams. Inspired by
+                                Greek Shields.
+                            </p>
+                            <a aria-label="Shop Now link" href="#" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="btn-slide absolute flex justify-content-between">
-                    <button class="btn btn-add" name="back slide" type="button" aria-label="Back Slide">
+                    <button id="prevSlide" class="btn btn-add" name="back slide" type="button" aria-label="Back Slide">
                         <i class="icon-chevron-left fs-18"></i>
                     </button>
-                    <button class="btn btn-add" name="next slide" type="button" aria-label="Next Slide">
+                    <button id="nextSlide" class="btn btn-add" name="next slide" type="button" aria-label="Next Slide">
                         <i class="icon-chevron-right fs-18"></i>
                     </button>
                 </div>
@@ -1746,24 +1803,1480 @@
                 </div>
                 <div class="categories">
                     <ul class="p-0 menu-categories flex flex-row justify-content-center align-items-center overflow-x-auto">
-                        <li class="cate-item-menu">
+                        <li class="cate-item-menu" data-target=".showAll">
                             <a href="#" class="ns-categories active">Show All</a>
                         </li>
-                        <li class="cate-item-menu">
+                        <li class="cate-item-menu" data-target=".earrings">
                             <a href="#" class="ns-categories">Earrings</a>
                         </li>
-                        <li class="cate-item-menu">
+                        <li class="cate-item-menu" data-target="rings">
                             <a href="#" class="ns-categories">Rings</a>
                         </li>
-                        <li class="cate-item-menu">
+                        <li class="cate-item-menu" data-target=".necklaces">
                             <a href="#" class="ns-categories">Necklaces</a>
                         </li>
-                        <li class="cate-item-menu">
+                        <li class="cate-item-menu" data-target=".bracelets">
                             <a href="#" class="ns-categories">Bracelets</a>
                         </li>
                     </ul>
-                    <div class="flex-nowrap overflow-hidden">
-                        <div class="slide-production">
+                    <div class="flex-nowrap overflow-hidden relative">
+                        <div class="slide-production showAll">
+                            <div class="pro-items-lists swiper-wrapper">
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_6.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn ">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Ring in Platinum with
+                                                    Tanzanite</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_7.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Bar Earrings in 18k Rose Gold</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular mt-5 mb-0 paragraph-font fw-500">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_8.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Olive Leaf Bypass Ring</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_9.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Triple Drop Link Earrings</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_6.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">
+                                                    Olive Leaf Pendant - 18k Gold
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_7.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Double Heart Tag Pendant</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="slide-production earrings">
+                            <div class="pro-items-lists swiper-wrapper">
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_6.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">
+                                                    Olive Leaf Pendant - 18k Gold
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_7.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Double Heart Tag Pendant</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_8.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">
+                                                    Double Pendant - 18k Gold
+                                                  </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_13.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Gold Wire Bracelet in 18k</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-production rings">
+                            <div class="pro-items-lists swiper-wrapper">
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_6.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn ">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Ring in Platinum with
+                                                    Tanzanite</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_tab_8.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">
+                                                    Double Pendant - 18k Gold
+                                                  </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_10.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Gold Wire Bracelet in 18k</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-production necklaces">
+                            <div class="pro-items-lists swiper-wrapper">
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_6.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn ">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Ring in Platinum with
+                                                    Tanzanite</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_7.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Bar Earrings in 18k Rose Gold</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular mt-5 mb-0 paragraph-font fw-500">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_8.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                            <div class="flex flex-column notificant-pro">
+                                                <span class="btn-secondary discount">-20%</span>
+                                                <span class="btn-secondary condition">Pre-Order</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Olive Leaf Bypass Ring</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price mt-5 mb-0">
+                                                <span class="paragraph-font pro-price-new fw-500">$969.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-items swiper-slide">
+                                    <div class="col-pro-items">
+                                        <div class="pro-image rounder-5 relative overflow-hidden">
+                                            <a aria-label="image product 1" href="#" class="aspect-ratio-container"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_9.webp" loading="lazy" width="462" height="462"
+                                                    alt="Product trending 1">
+                                            </a>
+                                            <a aria-label="product image 2" href="#"
+                                                class="aspect-ratio-container pro-img-hover"
+                                                style="--aspect-ratio: 1/1;">
+                                                <img src="images/img_hover.webp" width="462" height="462"
+                                                    alt="Product trending hover 1" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="flex list-btn-action">
+                                            <div class="flex flex-column list-btn">
+                                                <button class="btn btn-wishlist btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Add to Wishlist">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-wishlist"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add to Wishlist">Add To Wishlist</span>
+                                                </button>
+                                                <button class="btn btn-compare btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Compare">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="14">
+                                                            <use xlink:href="sprite.svg#compare"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Compare">Compare</span>
+                                                </button>
+                                                <button class="btn btn-view btn-item-action btn-add" name="add"
+                                                    type="button" aria-label="Quick Views">
+                                                    <span class="product-icon">
+                                                        <svg width="14" height="12">
+                                                            <use xlink:href="sprite.svg#view"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="View">View</span>
+                                                </button>
+                                            </div>
+                                            <div class="addtocart">
+                                                <button class="btn btn-add btn-item-action btn-addtocart" name="add"
+                                                    type="button" aria-label="Add To Cart">
+                                                    <span class="product-icon product-icon-addtocart">
+                                                        <svg width="14" height="13">
+                                                            <use xlink:href="sprite.svg#add-to-cart"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="tooltip-content-left tooltip"
+                                                        data-bs-title="Add To Cart">Add To Cart</span>
+                                                    <span class="product-icon-btn">
+                                                        Add To Cart
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="pro-info mt-15">
+                                            <span class="ns-categories cate-pro">Earrings</span>
+                                            <h3 class="pro-name paragraph-font name-hover fw-400 heading m-0">
+                                                <a aria-label="Name product" href="#">Triple Drop Link Earrings</a>
+                                            </h3>
+                                            <div class="rating">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                            </div>
+                                            <p class="pro-price pro-price-regular t-5 mb-0 fw-500 paragraph-font">
+                                                $599.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-production bracelets">
                             <div class="pro-items-lists swiper-wrapper">
                                 <div class="pro-items swiper-slide">
                                     <div class="col-pro-items">
@@ -2145,11 +3658,11 @@
                                 </div>
                                 <div class="timer-block">
                                     <span class="heading fs-40 timer-block__num js-timer-minutes mb-100">07</span>
-                                    <span class="paragraph-font timer-block__text">Minunites</span>
+                                    <span class="paragraph-font timer-block__text">Mins</span>
                                 </div>
                                 <div class="timer-block">
                                     <span class="heading fs-40 timer-block__num js-timer-seconds mb-100">28</span>
-                                    <span class="paragraph-font timer-block__text">Seconds</span>
+                                    <span class="paragraph-font timer-block__text">Secs</span>
                                 </div>
                             </div>
                         </div>
@@ -2719,7 +4232,7 @@
             <div class="footer-top">
                 <div class="flex flex-wrap ns-lists">
                     <div class="col-12 col-md-6 col-desk-4 col-footer-item">
-                        <div class="mt-0 mb-20">
+                        <div class="mt-0 mb-20 line-height-icon">
                             <a href="#" aria-label="Load HomePage">
                                 <svg width="93" height="20">
                                     <use xlink:href="sprite.svg#logo-load-page"></use>
@@ -2781,7 +4294,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-desk-2 mb-md-6 col-footer-item">
-                        <h4 class="mt-desk-0 my-25 title-links">
+                        <h4 class="mt-desk-0 my-15 mb-md-25 title-links">
                             Hot Categories
                             <span class="open-children-toggle"></span>
                         </h4>
@@ -2807,7 +4320,7 @@
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-desk-2 mb-md-6 col-footer-item">
-                        <h4 class="mt-desk-0 my-25 title-links">
+                        <h4 class="mt-desk-0 my-15 mb-md-25 title-links">
                             Customer Service
                             <span class="open-children-toggle"></span>
                         </h4>
@@ -2833,7 +4346,7 @@
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-desk-4 mb-md-6 col-footer-item">
-                        <h4 class="mt-desk-0 my-25 title-links">Sign Up to Newsletter
+                        <h4 class="mt-desk-0 my-15 mb-md-25 title-links">Sign Up to Newsletter
                             <span class="open-children-toggle"></span>
                         </h4>
                         <div class="contentList">

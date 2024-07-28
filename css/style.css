@@ -179,6 +179,11 @@ ul > li.links > a:hover {
 .description-text {
     margin-top: -8px;
 }
+
+.line-height-icon {
+    line-height: 1.1;
+}
+
 /* Tooltip */
 .tooltip {
     background: #111;
@@ -522,7 +527,7 @@ header.sticky {
 
 /* Blog *//*Page*/
 .default_dropdown .submenu {
-    padding: 20px;
+    width: 250px;
 }
 .default_dropdown ul.dropdown li:not(:last-child) {
     padding-bottom: 1rem;
@@ -648,20 +653,54 @@ input[type="search"] {
     border-radius: 50%;
     font-size: 1rem;
     position: absolute;
-    top: -17%;
+    top: -35%;
     left: 1.3rem;
     background-color: var(--key-jewelry);
     color: var(--background);
     z-index: 2;
 }
 
-.h-count.wishlist-count {
-    left: 1.3rem; 
-}
-
 /* ============================ Main ================================*/
 
 /* ======= SlideShow =======*/
+.slideshow {
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-list {
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+}
+
+.slide-item {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slide-item.active {
+    display: block;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .slideshow_text .slide-title {
     font-size: clamp(2.5rem, 4.7vw, var(--section-heading-font-size));
     margin-bottom: clamp(1rem, 3.5vw, 1.5rem);
@@ -684,6 +723,10 @@ input[type="search"] {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } 
+
+.slideshow .btn-slide {
+    pointer-events: auto;
+}
 
 .btn-slide {
     max-width: 95%;
@@ -797,6 +840,32 @@ input[type="search"] {
 .menu-categories > li > a.active::after{
     width: 100%;
 }
+
+.slide-production {
+    transform: translateY(40px);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    transition: .2s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.slide-production.open {
+    overflow: hidden;
+   transform: none;
+   position: relative;
+   z-index: 2;
+   opacity: 1;
+   visibility: visible;
+   transition: .2s ease-in-out .2s;
+}
+
 /* Product */
 .col-pro-items {
     position:relative;
@@ -1652,12 +1721,14 @@ footer {
 
 @keyframes slideDown {
     0% {
-        transform: translateY(-1.5rem);
+        padding-top: 15px;
         opacity: 0;
+        transition: all 0.4s;
     }
     100% {
-        transform: translateY(0);
+        padding-top: 0;
         opacity: 1;
+        transition: all 0.4s;
     }
 }
 
