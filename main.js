@@ -471,6 +471,15 @@ const updateCart = () => {
                 updateCart();
             });
 
+            itemElement.querySelector('.quantity-input').addEventListener('change', (event) => {
+                const newQuantity = parseInt(event.target.value, 10);
+                if (isNaN(newQuantity) || newQuantity <= 0) {
+                    return;
+                }
+                item.quantity = newQuantity;
+                updateCart();
+            });
+
             totalPrice += (item.newPrice !== null ? item.newPrice : item.price) * item.quantity;
             totalQuantity += item.quantity;
         });
